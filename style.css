@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100&family=Mulish:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@400;600&display=swap');
+
+:root {
+    --bg--dark: #1F2937;
+    --green-text-color: #4ADF86;
+    --btn-green: #10B981;
+    --border-color: #2F3E53;
+    --input-bg: #273549;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    background-color: #1C1C1C;
+}
+
+.container {
+    width: 550px;
+    background-color: var(--bg--dark);
+    padding: 46px 52px;
+}
+
+.container h1 {
+    font-size: 40px;
+    margin: 72px 0px 5px 0px;
+    font-weight: 800;
+}
+
+.container h1 span {
+    color:var(--green-text-color);
+}
+
+.container p {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Inter';
+    margin: 5px 0px 51px 0px;
+}
+
+.container .btn {
+    background-color: var(--btn-green);
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 223px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+}
+
+.container .btn:hover {
+    opacity: 0.6;
+}
+
+.container .btn img {
+    width: 20px;
+}
+
+.generated {
+    padding-top: 35px;
+    border-top: 1px solid var(--border-color);
+}
+
+input {
+    background-color: var(--input-bg);
+    border: none;
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+    outline: none;
+    color: #55F991;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#gen-1, #gen-2 {
+    margin-bottom: 27px;
+}
+
+#gen-1, #gen-3 {
+    margin-right: 10px;
+}
+
+::placeholder {
+    color: #202B3C;
+    font-size: 40px;
+    text-align: center;
+}
