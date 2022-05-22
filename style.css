@@ -173,7 +173,7 @@ input {
     top: 10px;
     left: 54px;
     border-radius: 20px;
-    /* display: none; */
+    display: none;
     transition: 0.8;
 }
 
