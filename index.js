@@ -3,8 +3,9 @@ let genTwo = document.getElementById("gen-2");
 let genThree = document.getElementById("gen-3");
 let genFour = document.getElementById("gen-4");
 let genBtn = document.getElementById("gen-btn");
-
-
+let toggleBtn = document.getElementById("toggle");
+let container = document.querySelector(".container");
+let copiedText = document.getElementById("copied");
 genBtn.onclick = () => {
     console.log(pass);
 }
@@ -48,6 +49,19 @@ function renderPassword() {
 function copyToClipboard(tag) {
     var copyText = document.getElementById(tag).value;
     navigator.clipboard.writeText(copyText).then(() => {
-        alert("Copied to clipboard");
+        copiedText.style.display = "block";
     });
+}
+
+toggleBtn.onclick = () => {
+    if (toggleBtn.className === "toggle") {
+        toggleBtn.className = "toggle-start";
+        container.style.backgroundColor = "#ECFDF5"
+        container.style.color = "#1F2937"
+    } else if (toggleBtn.className === "toggle-start") {
+        toggleBtn.className = "toggle";
+        container.style.backgroundColor = "#1F2937"
+        container.style.color = "white"
+    }
+    
 }
