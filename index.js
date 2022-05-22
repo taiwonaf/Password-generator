@@ -3,8 +3,7 @@ let genTwo = document.getElementById("gen-2");
 let genThree = document.getElementById("gen-3");
 let genFour = document.getElementById("gen-4");
 let genBtn = document.getElementById("gen-btn");
-// let pass = document.querySelector("#num").value;
-let passLength = 12;
+
 
 genBtn.onclick = () => {
     console.log(pass);
@@ -25,6 +24,7 @@ function randomNumber(randomGen) {
 }
 
 function generatePassword() {
+    let passLength = document.getElementById("input-num").value;
     for (let i = 0; i < passLength; i++) {
         let randomSelected = passRandom[randomNumber(passRandom)];
         let selectedItem = randomSelected[randomNumber(randomSelected)];
@@ -42,4 +42,12 @@ function renderPassword() {
     generatedPassword = ""
     genFour.value = generatePassword()
     generatedPassword = ""
+}
+
+
+function copyToClipboard(tag) {
+    var copyText = document.getElementById(tag).value;
+    navigator.clipboard.writeText(copyText).then(() => {
+        alert("Copied to clipboard");
+    });
 }

@@ -15,12 +15,16 @@
             <img src="Icon.svg" alt="">
             Generate passwords
         </a>
-        <!-- <input type="number" id="num"> -->
+        <div class="num-input-container">
+            <p id="passLengthText">Enter password length</p>
+            <input type="number" id="input-num">
+        </div>
+        
         <div class="generated">
-            <input type="text" id="gen-1" placeholder="...">
-            <input type="text" id="gen-2" placeholder="...">
-            <input type="text" id="gen-3" placeholder="...">
-            <input type="text" id="gen-4" placeholder="...">
+            <input type="text" id="gen-1" onclick="copyToClipboard('gen-1')" placeholder="...">
+            <input type="text" id="gen-2" onclick="copyToClipboard('gen-2')" placeholder="...">
+            <input type="text" id="gen-3" onclick="copyToClipboard('gen-3')" placeholder="...">
+            <input type="text" id="gen-4" onclick="copyToClipboard('gen-4')" placeholder="...">
         </div>
     </div>
 

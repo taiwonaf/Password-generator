@@ -104,3 +104,20 @@ input {
     font-size: 40px;
     text-align: center;
 }
+
+#input-num {
+    width: 50px;
+    
+}
+
+#passLengthText {
+    margin-bottom: 0;
+}
+
+.num-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 65%;
+}
